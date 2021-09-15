@@ -1,6 +1,5 @@
 /* BRAZIL PHONE NUMBER ANONYMIZATION REGEX - TYPESCRIPT - TEMPORARY FILE*/
 private anonymizePhoneNumber(phoneNumber: string) {
-    this.phoneNumber = phoneNumber;
     return phoneNumber
       .replace(/^(\d{0})/, '+$1')
       .replace(/(\d{2})(\d)/, '$1 $2')
