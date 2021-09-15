@@ -1,7 +1,6 @@
 /* EMAIL ANONYMIZATION WITHOUT REGEX - TEMPORARY FILE */
 
 private anonymizeEmail(email: string) {
-    this.email = email;
     const fullEmail = email.split('@');
     const emailProvider = fullEmail[1];
     const emailName = fullEmail[0].substring(0, 2) + '*****';
