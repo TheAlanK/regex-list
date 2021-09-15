@@ -1,0 +1,14 @@
+/* BRAZIL PHONE NUMBER ANONYMIZATION REGEX - TYPESCRIPT - TEMPORARY FILE*/
+private anonymizePhoneNumber(phoneNumber: string) {
+    this.phoneNumber = phoneNumber;
+    return phoneNumber
+      .replace(/^(\d{0})/, '+$1')
+      .replace(/(\d{2})(\d)/, '$1 $2')
+      .replace(/(\d{2})(\d)/, '($1) $2')
+      .replace(/(\d)(\d{4})$/, '$1-$2')
+      .replace(/(?=.{6,10}$)./g, '*');
+  }
+  
+/* input: 5511912341234
+  output: +55(11)*****-1234 */
+   
